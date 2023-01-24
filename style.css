@@ -1,0 +1,178 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+
+body{
+    min-height: 100vh;
+  
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue);
+
+}
+
+
+
+.container{
+    padding: 10px;
+}
+
+
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: flex-end;
+    
+    
+}
+main .box-1{
+    border-radius: 10px;
+    border-top-right-radius: 50%;
+    width: 260px;
+
+    
+}
+main .box-2{
+    width: 500px;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+main .box-1,main .box-2{
+    background-color: var(--Dark-Blue);
+}
+main .box-1 .container .img img{
+    padding: 20px;
+}
+main .box-1 .container .icon {
+    padding: 20px;
+    padding-top: 0;
+}
+main .box-1 .container .icon img{
+    border: 10px solid var(--Very-Dark-Blue);
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+main .box-2 .container{
+    display: flex;
+  
+    flex-direction: column;
+    font-family: inherit;
+    font-size: 14px;
+    color:var(--Grayish-Blue);
+    position: relative;
+}
+main .box-2 .container h1 {
+    margin: 10px 0;
+}
+main .box-2 .container h1 span{
+    color: white;  
+
+}
+
+main .box-2 .container .input{
+
+    height: 15px;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 10px;
+    margin:10px 0;
+    position: relative;
+}
+
+
+
+main .box-2 .container .input::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    left: 80%;
+    z-index: 2;
+}
+
+main .box-2 .container .input::after{
+    content: "";
+    position: absolute;
+    width: 83%;
+
+    height: 15px;
+    border-radius: 10px;
+    background:linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%) ) ;
+    z-index: 1;
+}
+
+
+
+main .box-2 .container .start-end{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 10px 0;
+}
+main .box-2 .container  .flot-box{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    top:-40%;
+    transform: translatey(50%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    z-index: 5;
+
+}
+main .box-2 .container  .flot-box h3{
+    font-size: 35px;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+}
+main .box-2 .container  .flot-box p{
+    text-align: center;
+    font-weight: 700;
+}
+main .box-2 .container .arrow {
+    position: absolute;
+
+    border-color: white transparent transparent transparent;
+    border-width: 10px;
+    border-style: solid;
+    right: 10%;
+    top:21%;
+  
+    z-index: 20;
+ 
+}
